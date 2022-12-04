@@ -97,6 +97,7 @@ function isPartiallyOverlapping(firstElf: string, secondElf: string) {
   return hasOverlapping;
 }
 
+// 839
 console.log(
   `Amount of assignment paris that partially contain other: ${partiallyOverlappedPairs}`
 );

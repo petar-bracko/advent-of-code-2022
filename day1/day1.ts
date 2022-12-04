@@ -13,9 +13,11 @@ calories.forEach((calorie) => {
   }
 });
 
-const maxCalories = Math.max(...elfs.map((elf) => elf.calories));
+// 68467
 console.log(
-  `Highest amount of calories carried by single elf: ${maxCalories} kcal.`
+  `Highest amount of calories carried by single elf: ${Math.max(
+    ...elfs.map((elf) => elf.calories)
+  )} kcal.`
 );
 
 elfs.sort((a, b) => a.calories - b.calories);
@@ -25,4 +27,5 @@ for (let i = 1; i < 4; i++) {
   topThree += elfs[elfs.length - i].calories;
 }
 
+// 203420
 console.log(`Amount of calories carried by top 3 elfs: ${topThree} kcal.`);

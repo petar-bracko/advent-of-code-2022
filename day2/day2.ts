@@ -101,6 +101,7 @@ rounds.forEach((round) => {
   partTwo_totalScore += roundResult(opponentHand, myHand);
 });
 
+// 13448
 console.log(`Part two - Total score: ${partTwo_totalScore}`);
 
 function getMyHand(outcome: string) {
